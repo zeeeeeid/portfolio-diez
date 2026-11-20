@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141419" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+    <linearGradient id="pinkNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff79b0" />
+      <stop offset="50%" stop-color="#ff2d75" />
+      <stop offset="100%" stop-color="#b8004f" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d8d" />
+      <stop offset="100%" stop-color="#1a1a24" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle with neon border -->
+  <circle cx="200" cy="200" r="185" fill="url(#bgGrad)" stroke="url(#pinkNeon)" stroke-width="6" filter="url(#neonGlow)"/>
+  
+  <!-- Cyber grid elements -->
+  <line x1="80" y1="200" x2="320" y2="200" stroke="#ff2d75" stroke-opacity="0.2" stroke-dasharray="4 4" />
+  <line x1="200" y1="80" x2="200" y2="320" stroke="#ff2d75" stroke-opacity="0.2" stroke-dasharray="4 4" />
+  
+  <!-- Floating playful sparkles -->
+  <path d="M 90 120 Q 95 130 105 130 Q 95 130 90 140 Q 85 130 75 130 Q 85 130 90 120" fill="#ff79b0" />
+  <path d="M 310 110 Q 315 120 325 120 Q 315 120 310 130 Q 305 120 295 120 Q 305 120 310 110" fill="#ff2d75" />
+  <circle cx="310" cy="260" r="4" fill="#ff79b0" />
+  <circle cx="95" cy="280" r="5" fill="#ff2d75" />
+
+  <!-- Avatar Body / Hoodie -->
+  <path d="M 110 370 C 110 290 150 270 200 270 C 250 270 290 290 290 370 Z" fill="#181822" stroke="#ff2d75" stroke-width="3" />
+  <!-- Hoodie inner pink collar -->
+  <path d="M 160 275 L 200 320 L 240 275 Z" fill="#20202e" stroke="#ff4d8d" stroke-width="2" />
+  
+  <!-- Neck -->
+  <rect x="180" y="225" width="40" height="50" rx="8" fill="#ffd1dc" />
+  
+  <!-- Hair back -->
+  <ellipse cx="200" cy="180" rx="80" ry="85" fill="url(#hairGrad)" />
+  
+  <!-- Head Face -->
+  <ellipse cx="200" cy="180" rx="65" ry="70" fill="#ffe4ea" />
+  
+  <!-- Cute Pink Cheeks -->
+  <ellipse cx="160" cy="205" rx="14" ry="8" fill="#ff4d8d" opacity="0.6" />
+  <ellipse cx="240" cy="205" rx="14" ry="8" fill="#ff4d8d" opacity="0.6" />
+  
+  <!-- Stylish Cyber Glasses / Shades -->
+  <rect x="140" y="165" width="50" height="28" rx="8" fill="#0f0f14" stroke="#ff2d75" stroke-width="3" />
+  <rect x="210" y="165" width="50" height="28" rx="8" fill="#0f0f14" stroke="#ff2d75" stroke-width="3" />
+  <line x1="190" y1="178" x2="210" y2="178" stroke="#ff2d75" stroke-width="3" />
+  
+  <!-- Glasses Neon Reflections -->
+  <path d="M 148 172 L 182 172" stroke="#ff79b0" stroke-width="2" stroke-linecap="round" />
+  <path d="M 218 172 L 252 172" stroke="#ff79b0" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Playful Smile -->
+  <path d="M 188 215 Q 200 226 212 215" fill="none" stroke="#ff2d75" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Hair Bangs / Front -->
+  <path d="M 135 150 C 145 125 180 115 200 115 C 225 115 260 125 265 155 C 250 145 220 145 200 152 C 175 145 150 145 135 150 Z" fill="#ff2d75" />
+  <path d="M 130 160 Q 135 220 150 240 Q 140 190 140 165 Z" fill="#ff2d75" />
+  <path d="M 270 160 Q 265 220 250 240 Q 260 190 260 165 Z" fill="#ff2d75" />
+  
+  <!-- Cat ear headphones with glowing pink lights -->
+  <path d="M 135 120 L 115 70 L 165 95 Z" fill="#14141a" stroke="#ff2d75" stroke-width="4" />
+  <path d="M 133 110 L 122 80 L 155 98 Z" fill="#ff2d75" opacity="0.8" />
+  
+  <path d="M 265 120 L 285 70 L 235 95 Z" fill="#14141a" stroke="#ff2d75" stroke-width="4" />
+  <path d="M 267 110 L 278 80 L 245 98 Z" fill="#ff2d75" opacity="0.8" />
+  
+  <!-- Headphone band -->
+  <path d="M 130 145 C 130 75 270 75 270 145" fill="none" stroke="#252533" stroke-width="12" stroke-linecap="round" />
+  <path d="M 130 145 C 130 75 270 75 270 145" fill="none" stroke="#ff2d75" stroke-width="3" stroke-linecap="round" filter="url(#neonGlow)" />
+  
+  <!-- Headphone earcups -->
+  <rect x="122" y="145" width="16" height="36" rx="8" fill="#ff2d75" />
+  <rect x="262" y="145" width="16" height="36" rx="8" fill="#ff2d75" />
+</svg>
+
